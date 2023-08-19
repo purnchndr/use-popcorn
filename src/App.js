@@ -13,7 +13,6 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState(null);
   const { movies, isLoading, error } = useMovies(query);
-
   const [watched, setWatched] = useLocalStorageState([], "watched");
 
   function handleSelectMovie(id) {
@@ -68,6 +67,7 @@ export default function App() {
           )}
         </Box>
       </Main>
+      <Footer />
     </>
   );
 }
@@ -441,3 +441,14 @@ function WatchedMovie({ movie, onDeleteWatched }) {
     </li>
   );
 }
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>
+        This site is created and maintained by{" "}
+        <a href="https://www.linkedin.com/in/purnchndr">Purnachandra</a>
+      </p>
+    </footer>
+  );
+};
