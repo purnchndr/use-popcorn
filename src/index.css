@@ -139,7 +139,7 @@ body {
 .list {
   list-style: none;
   padding: 0.8rem 0;
-  /* overflow-y: scroll; */
+  /* overflow-y: scroll */
 }
 
 .list-watched {
@@ -357,6 +357,12 @@ footer a {
   text-decoration: none;
   color: wheat;
 }
+
+.message {
+  font-size: larger;
+  text-align: center;
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
